@@ -2,12 +2,42 @@
 layout: default
 ---
 <header>
-  <h1>{{ site.title }}</h1>
-  {%-if site.theme_config.show_description-%}
-    <p>{{ site.description }}</p>
-  {%-endif-%}
+  <div class="home-title">
+    <img src="/assets/img/avatar.png" />
+    <h1>what's a bemoty?</h1>
+  </div>
+  <p>
+    my name is josh and i do stuff on the internet, usually whatever is the most fun atm :)
+  </p>
+  <p>
+  you might also know me as:
+  </p>
+  <ul>
+    <li>
+      a network administrator at <a href="https://gommehd.net/" target="_blank"
+      rel="noopener noreferrer">GommeHD.net</a>
+    </li>
+    <li>
+      a moderator on Mojang's bug tracker <a href="https://bugs.mojang.com/"
+      target="_blank" rel="noopener noreferrer">Mojira</a>
+    </li>
+    <li>
+      a German translator/proofreader for <a href="https://crowdin.com/project/minecraft/"
+      target="_blank" rel="noopener noreferrer">Minecraft</a>
+    </li>
+    <li>
+      an editor and Twitter admin for <a href="https://twitter.com/GeniusDeu"
+      target="_blank" rel="noopener noreferrer">Genius Germany</a>
+    </li>
+  </ul>
+  <p>
+    ...or maybe you don't know me at all <span class="format">( ͡° ͜ʖ ͡°)</span>
+  </p>
+  {% if site.theme_config.show_description %}
+  <p>{{ site.description }}</p>
+  {% endif %}
 </header>
 
-{%-include menu_item.html collection=site.data.menu.entries-%}
+{% include menu_item.html collection=site.data.menu.entries %}
 
 {{ content }}

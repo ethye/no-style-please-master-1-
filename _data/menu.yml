@@ -2,37 +2,34 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: info
+  - title: <span class="emoji">👥</span> follow me here (only if you want)
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
-      - title: github repo
-        url: https://github.com/riggraz/no-style-please
-      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
+      - title: Twitter
+        url: https://twitter.com/bemoty
+      - title: GitHub
+        url: https://github.com/bemoty
+      - title: YouTube
+        url: https://youtube.com/bemoty
+      - title: Instagram
+        url: https://instagram.com/joshoty
 
-  - title: all posts
-    post_list:
-      limit: 5
-      show_more: true
-      show_more_text: See archive...
-      show_more_url: archive.html
-
-  - title: posts by category
-    post_list:
-      category: example2
-      show_more: true
-      show_more_text: See more posts...
-      show_more_url: example2-archive.html
-
-  - title: rss
-    url: feed.xml
+  - title: <span class="emoji">🔑</span> PGP
+    entries:
+     - title: 3151 98E7 FAF8 F8B5 C424  B5FD 78D7 D488 54FA 7AB0
+       url: https://bemoty.dev/public.pgp
   
-  - title: another list
+  - title: <span class="emoji">📧</span> get in touch
     entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
-  - title: PRO TIP
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
+      - title: josh (äät-symbol) bemoty.dev
+  
+#  - title: <span class="emoji">📓</span> blog posts
+#    post_list:
+#      limit: 5
+#      show_more: false
+#      show_more_text: See archive...
+#      show_more_url: archive.html
+
+#  - title: <span class="emoji">📻</span> rss
+#    entries:
+#      - title: feed.xml
+#        url: feed.xml

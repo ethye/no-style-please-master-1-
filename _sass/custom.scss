@@ -1,0 +1,60 @@
+#github {
+    border: 0;
+    color: #fff;
+    fill: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0)
+    }
+
+    20%, 60% {
+        transform: rotate(-25deg)
+    }
+
+    40%, 80% {
+        transform: rotate(10deg)
+    }
+}
+
+#github:hover .octo-arm {
+    animation: wave 560ms ease-in-out;
+    transform-origin: 130px 106px
+}
+  
+@media (prefers-reduced-motion: reduce) {
+    #github:hover .octo-arm {
+        animation: none
+    }
+}
+
+.format {
+    font-family: Arial, sans-serif;
+}
+
+.home-title {
+    margin-bottom: 25px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.home-title h1 {
+    margin-left: 15px;
+}
+
+.home-title + p {
+    clear: both;
+}
+
+.home-title img {
+    float: left;
+    height: 75px;
+    display: block;
+    margin: 0;
+}

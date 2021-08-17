@@ -1,0 +1,69 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+cmsName: git
+models:
+  posts_archived:
+    type: page
+    label: Posts Archived
+    folder: _posts_archived
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: category
+        label: Category
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    exclude:
+      - index.md
+    fields:
+      - type: number
+        name: layout
+        label: Layout
+        subtype: int
+      - type: string
+        name: permalink
+        label: Permalink
+  page_2:
+    type: page
+    label: Page 2
+    match: '*'
+    exclude:
+      - 404.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+  menu:
+    type: data
+    label: Menu
+    file: menu.yml
+    fields:
+      - type: list
+        name: entries
+        label: Entries
+        items:
+          type: object
+          fields:
+            - type: markdown
+              name: title
+              label: Title
+            - type: list
+              name: entries
+              label: Entries
+              items:
+                type: object
+                fields:
+                  - type: string
+                    name: title
+                    label: Title
+                  - type: string
+                    name: url
+                    label: Url

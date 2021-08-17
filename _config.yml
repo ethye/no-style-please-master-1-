@@ -4,7 +4,7 @@ email: ethy@fastmail.fr # email of site's author
 url: ethy.cc # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog"
 description: > # description of the site (multiple lines allowed)
-  bemoty? bemoty? what's a bemoty?
+  ethy? ethy? what's a ethy?
 
 highlighter: rouge
 permalink: /:slug
